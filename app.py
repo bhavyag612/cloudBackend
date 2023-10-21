@@ -19,4 +19,4 @@ def get_quote():
     return jsonify(quote.to_dict())
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
