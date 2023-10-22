@@ -12,7 +12,7 @@ db.init_app(app)
 
 
 # Route to get a random quote
-@app.route("/", methods=["GET"])
+@app.route("/quote", methods=["GET"])
 def get_quote():
     cursor = Quote.query.all()
     quote=cursor[randint(0,9)]
